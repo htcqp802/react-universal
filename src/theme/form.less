@@ -1,0 +1,94 @@
+@import "variables";
+
+:global {
+  .form-table {
+    tr {
+      height: 63px;
+      td {
+        position: relative;
+        padding-left: 20px;
+        &:first-child {
+          text-align: right;
+        }
+        &.required:before {
+          content: "*  ";
+          color: @required;
+        }
+
+        select{
+          border: 1px solid #a9a9a9;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          width: 277px;
+          height: 42px;
+          line-height: 42px;
+          font-size: 14px;
+          vertical-align: middle;
+        }
+
+        input[type="text"] {
+          border: 1px solid #a9a9a9;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          width: 264px;
+          padding-left: 10px;
+          height: 42px;
+          line-height: 42px;
+          font-size: 14px;
+          vertical-align: middle;
+          transition: border .2s,outline .2s;
+          &:focus{
+            border:1px solid @orange-light;
+            outline:@orange-light auto 2px;
+          }
+          &.hasUnit{
+            padding-right: 44px;
+            width: 220px;
+          }
+        }
+        input[type="radio"] {
+          margin-left: 15px;
+          margin-right: 5px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+          transition: background .2s;
+          background-color: @orange-light;
+          color: #fff;
+          border: 0;
+          font-size: 16px;
+          padding: 10px 25px;
+          border-radius: 5px;
+          &:hover {
+            background-color: @orange-dark;
+          }
+          &[disabled]{
+            background-color: @disabled;
+          }
+        }
+        .unit{
+          display: inline-block;
+          line-height: 42px;
+          width: 42px;
+          height: 44px;
+          text-align: center;
+          margin-left: -43px;
+          border-bottom-right-radius: 2px;
+          border-top-right-radius:2px ;
+        }
+      }
+    }
+    .error{
+      color:@required;
+      min-width: 160px;
+    }
+  }
+
+}

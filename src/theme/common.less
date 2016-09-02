@@ -1,0 +1,34 @@
+@import "variables";
+:global {
+  .container {
+    width: @container-width;
+    margin: auto;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .clearFix{
+    &:before,&:after{
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .orange{
+    color: @orange-light !important;
+  }
+
+}

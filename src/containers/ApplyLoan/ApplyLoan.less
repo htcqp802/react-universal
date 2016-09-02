@@ -1,0 +1,75 @@
+@import "../../theme/variables";
+
+@border: #e6e6e6;
+
+body{
+  background-color: #f0f0f0;
+}
+
+.applyLoan {
+  width: 1000px;
+  margin: auto;
+  .path {
+    width:300px;
+    li {
+      display: inline-block;
+      padding: 0 5px;
+      &, & a {
+        font-size: 16px;
+        line-height: 50px;
+      }
+    }
+  }
+  .panel {
+    border: 1px solid @border;
+    background-color: #fff;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .step1 {
+      height: 110px;
+      background: url("containers/ApplyLoan/lld_step.png") no-repeat center 0 #fafafa;
+    }
+    .step2{
+      height: 110px;
+      background: url("containers/ApplyLoan/lld_step.png") no-repeat center -110px #fafafa;
+    }
+    .step3{
+      height: 110px;
+      background: url("containers/ApplyLoan/lld_step.png") no-repeat center -220px #fafafa;
+    }
+    .content{
+      padding:0 122px;
+      .title{
+        line-height: 52px;
+        font-size: 24px;
+        padding-top: 30px;
+      }
+      .navCondition{
+        background: url("containers/ApplyLoan/nav_condition.jpg") no-repeat 0 0;
+        padding-top: 88px;
+        span{
+          display: inline-block;
+          line-height: 20px;
+          color: #333;
+          text-align: center;
+        }
+        .first{
+          margin-left: 24px;
+        }
+        .second{
+          margin-left: 114px;
+        }
+        .third{
+          margin-left: 78px;
+        }
+      }
+    }
+  }
+}
+
+.center{
+  text-align: center;
+}
+.orange{
+  color: @orange-light;
+}

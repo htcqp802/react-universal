@@ -1,0 +1,46 @@
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  background: #000;
+  z-index: 990;
+}
+.content{
+  z-index: 991;
+  width: 500px;
+  height: 480px;
+  position: fixed;
+  margin-left: -250px;
+  margin-top: -240px;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  .title{
+    color: #333;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #ddd;
+    padding-right: 14px;
+    padding-left: 40px;
+    background: #f0f0f0;
+  }
+  .close{
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    background: url("components/ApplyLoanForm/lld_close.png") no-repeat center center;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+  }
+}

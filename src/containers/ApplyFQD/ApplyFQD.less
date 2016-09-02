@@ -1,0 +1,73 @@
+@import "../../theme/variables";
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  opacity: 0.3;
+  background-color: #000;
+  z-index: 998;
+}
+.alert{
+  z-index: 999;
+  background-color: #fff;
+  p{
+    margin: 0;
+  }
+  width: 500px;
+  height: 320px;
+  margin-top: -135px;
+  margin-left: -250px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  .head{
+    height: 48px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f0f0f0;
+    padding-left:40px;
+    padding-right: 14px;
+    p{
+      font-size: 18px;
+      line-height: 48px;
+      color: #333;
+      display: inline-block;
+    }
+    .close{
+      background: url("components/ApplyLoanForm/lld_close.png") no-repeat;
+      width: 25px;
+      height: 25px;
+      float: right;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+  }
+  .content{
+    text-align: center;
+    .success{
+      background: url("components/ApplyLoanForm/lld_suc.png") center no-repeat;
+      height: 120px;
+    }
+    p{
+      font-size: 16px;
+      padding: 0 40px;
+    }
+  }
+  .foot{
+    text-align: center;
+    margin-top: 20px;
+    a{
+      display: inline-block;
+      background-color: @orange-light;
+      color: #fff;
+      height: 44px;
+      line-height: 44px;
+      width: 160px;
+      margin:10px;
+      text-align: center;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+}

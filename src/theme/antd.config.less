@@ -1,0 +1,210 @@
+@orange-light: #ff6825;
+@link-color: @orange-light;
+@primary-color: @orange-light;
+@info-color: @orange-light;
+
+.nav {
+  .ant-menu-item.hidebar {
+    position: relative;
+    background: #fff;
+    top: -5px;
+    width: 122px;
+    border: 0;
+    left: 119px;
+    height: 7px !important;
+    border-right: 1px solid #e6e6e6;
+    padding: 0 !important;
+    &:hover{
+      background-color: #fff !important;
+      cursor: inherit;
+    }
+  }
+
+  .ant-menu-submenu-open,.ant-menu-submenu-active{
+    .ant-menu-submenu-title{
+      box-shadow: 0 1px 6px rgba(100, 100, 100, 0.2);
+      a{
+        border-right-color: rgba(0,0,0,0) !important;
+      }
+    }
+  }
+
+  .ant-menu-horizontal {
+    border-bottom: 0;
+    .ant-menu-item, .ant-menu-submenu {
+      border-bottom: 0;
+    }
+    float: right;
+  }
+  .ant-menu-item {
+    z-index: 1;
+  }
+  .ant-menu-submenu-active {
+    background-color: inherit;
+  }
+  .ant-menu-submenu {
+    .ant-menu {
+      border-radius: 0;
+      margin-top: 0;
+    }
+  }
+  .nav-head {
+    line-height: 30px;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    color: #a5a5a5;
+    .ant-menu-inline, .ant-menu-vertical{
+      border: 0;
+    }
+    & > .ant-menu-item, & > .ant-menu-submenu > .ant-menu-submenu-title {
+      padding: 0;
+      a {
+        border-right: 1px solid #eeeeee;
+        color: #a5a5a5;
+        padding: 0 20px;
+        display: inline;
+        &:hover {
+          color: @orange-light;
+        }
+      }
+    }
+    .ant-menu-vertical > .ant-menu-item {
+      padding: inherit;
+      text-align: center;
+    }
+    & > .ant-menu-submenu > .ant-menu-submenu-title:hover {
+      background-color: #fff;
+    }
+    & > .ant-menu-submenu > .ant-menu > .ant-menu-item:hover {
+      background-color: #fff;
+    }
+    & > .ant-menu-submenu:hover {
+      .fa-angle-down {
+        transform: rotate(180deg);
+      }
+      .ant-menu-submenu-title {
+        background-color: #fff;
+      }
+      a {
+        color: #323232;
+        &:hover {
+          color: @orange-light;
+        }
+      }
+    }
+  }
+  .nav-body {
+    line-height: 69px;
+    a {
+      font-size: 16px;
+    }
+    & > .ant-menu-submenu:hover {
+      .fa-angle-down {
+        transform: rotate(180deg);
+      }
+    }
+
+    .menu-btn {
+      z-index: 1;
+      .ant-menu-submenu-title {
+        height: 34px;
+        line-height: 34px;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        margin-top: 14px;
+        position: relative;
+        a {
+          color: #5e5e5e;
+          font-size: 14px;
+          img {
+            position: relative;
+            right: 5px;
+            top: 2px;
+          }
+          .fa-angle-down {
+            position: relative;
+            left: 5px;
+          }
+          .fa-circle {
+            position: absolute;
+            color: #ff4200;
+            top: -6px;
+            right: 20px;
+          }
+        }
+      }
+      .ant-menu {
+        width: 240px;
+        .ant-menu-item {
+          padding: 0 20px;
+          &:hover {
+            background-color: @orange-light;
+            a {
+              color: #fff;
+            }
+            .right-info-orange {
+              color: #fff;
+            }
+            &.last {
+              a {
+                color: #5e5e5e;
+              }
+            }
+          }
+          height: 37px;
+          line-height: 36px;
+          a {
+            font-size: 14px;
+            color: #5e5e5e;
+            .right-info {
+              float: right;
+            }
+            .right-info-orange {
+              float: right;
+              color: @orange-light;
+              .num {
+                font-size: 12px;
+                padding: 0 5px;
+                background-color: @orange-light;
+                color: #fff;
+                border-radius: 10px;
+              }
+            }
+          }
+          &.last {
+            text-align: center;
+            background-color: rgb(249, 249, 249);
+          }
+        }
+
+
+      }
+
+    }
+  }
+  .sub-menu-img {
+    .ant-menu {
+      .ant-menu-item {
+        width: 100px;
+        line-height: 24px;
+        height: inherit;
+        color: #323232;
+        img {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+
+}
+
+.ant-menu-submenu-horizontal > .ant-menu {
+  right: 0;
+  left: inherit;
+}
+
+.fa-angle-down {
+  transition: transform .8s;
+}

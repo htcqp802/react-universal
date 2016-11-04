@@ -79,15 +79,15 @@ export default class fjdDetail extends Component {
                   <p className={style.text1} >房产位于北京，有按揭的用户、银行办理抵押房产的用户均可申请凤加贷，适用于按揭买房、装修、留学、旅游、个体经营等所有消费或经营类用途。</p>
                   <ul className={`clearFix`}>
                     <li>
-                      <div className={style.img} style={{background: "url(//img1.fengjr.com/public/dist/20160628172438/img/lld/applyloan_detail_case01-7f906a94.png) center center no-repeat"}}></div>
+                      <div className={style.img} style={{background: "url(//img1..com/public/dist/20160628172438/img/lld/applyloan_detail_case01-7f906a94.png) center center no-repeat"}}></div>
                       <p className={style.name}>案例一：</p>
                       <p className={style.text2} >白领小王在北京按揭购买了一套房，还希望能有笔钱用来装修，通过凤加贷他申请到一笔装修金，装修期间还顺便带上家人去旅游。</p></li>
                     <li>
-                      <div className={style.img} style={{background: "url(//img1.fengjr.com/public/dist/20160628172438/img/lld/applyloan_detail_case02-18caf26a.png) center center no-repeat"}}></div>
+                      <div className={style.img} style={{background: "url(//img1..com/public/dist/20160628172438/img/lld/applyloan_detail_case02-18caf26a.png) center center no-repeat"}}></div>
                       <p className={style.name}>案例二：</p>
                       <p className={style.text2}>老张将自己名下的北京房产抵押给银行，贷款开了公司，近期公司材料采购急用钱，通过凤加贷他申请到了一笔材料款，解了燃眉之急。</p></li>
                     <li className={style.last} >
-                      <div className={style.img} style={{background: "url(//img3.fengjr.com/public/dist/20160628172438/img/lld/applyloan_detail_case03-96ad6dc2.png) center center no-repeat"}}></div>
+                      <div className={style.img} style={{background: "url(//img3..com/public/dist/20160628172438/img/lld/applyloan_detail_case03-96ad6dc2.png) center center no-repeat"}}></div>
                       <p className={style.name}>案例三：</p>
                       <p className={style.text2}>李女士想在北京买二套房子，但首付太高钱不够，拿到银行的批贷后立即办理了凤加贷，帮她缓解了首付压力。</p></li>
                   </ul>

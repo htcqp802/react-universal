@@ -115,7 +115,7 @@ export default class Foot extends Component {
                     </div>
                     <div className={style.detailImpotant}>
                         <div style={{width:"510px",lineHeight:"28px",float:"left"}} ><p>版权所有 © 凤凰金融 | Copyright 2015
-                            fengjr.com &amp; jr.ifeng.com,All Rights Reserved</p></div>
+                            .com &amp; jr.ifeng.com,All Rights Reserved</p></div>
                         <div style={{width:"500px",float:"left"}}>
                             <div style={{paddingLeft:"40px"}} className={style.iconKexin}>
                                 <a
@@ -129,7 +129,7 @@ export default class Foot extends Component {
                                 className={style.credibility}
                                 ></a>
                                 <a
-                                href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.fengjr.com&amp;lang=zh_cn"
+                                href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www..com&amp;lang=zh_cn"
                                 title="凤凰金融已引入VeriSign SSL加密技术，您的隐私及个人资料安全已受到最高级别的保护。" target="_blank"
                                 className={style.norton}
                                 ></a>
